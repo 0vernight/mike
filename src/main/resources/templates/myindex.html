@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 th:text="${name}">哈哈</h1>
+<h2>
+    <form action="subscribe.html" th:attr="action=@{/subscribe}">
+        <a href="www.atguigu.com" th:href="${link}">去百度</a> <br/>
+        <a href="www.atguigu.com" th:href="@{link}">去百度2</a>
+
+        <fieldset>
+            <input type="text" name="email"/>
+            <input type="submit" value="Subscribe!" th:attr="value=#{subscribe.submit}"/>
+        </fieldset>
+    </form>
+</h2>
+</body>
+</html>
