@@ -96,7 +96,7 @@ public class StringTest {
  * 1.String声明为final的，不可被继承
  * 2.String实现了Serializable接口:表示字符串是支持序列化的。
  * 实现了ComparabLe接口:表示String可以比较大小
- * 3.String内部定义了final char[ ] value用于存储字符串数据
+ * 3.String内部定义了final char[ ] value用于存储字符串数据,现在是byte[]了
  * 4.String:代表不可变的字符序列。简称:不可变性。
  *      体现:1.当对字符串重新赋值时，需要重写指定内存区域赋值，不能使用原有的value进行赋值。
  *          2．当对现有的字符串进行连接操作时，也需要重新指定内存区域赋值，不能不能使用原有的value进行赋值
